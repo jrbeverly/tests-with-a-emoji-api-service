@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/EmojiService/">
+    <Project Path="src/EmojiService/EmojiService.Api/EmojiService.Api.csproj" />
+    <Project Path="src/EmojiService/EmojiService.Domain/EmojiService.Domain.csproj" />
+    <Project Path="src/EmojiService/EmojiService.Infrastructure/EmojiService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/EmojiService/">
+    <Project Path="tests/EmojiService/EmojiService.Tests/EmojiService.Tests.csproj" />
+    <Project Path="tests/EmojiService/EmojiService.IntegrationTests/EmojiService.IntegrationTests.csproj" />
+    <Project Path="tests/EmojiService/EmojiService.Downstream/EmojiService.Downstream.csproj" />
+  </Folder>
+</Solution>

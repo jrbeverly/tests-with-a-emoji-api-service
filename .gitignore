@@ -1,0 +1,16 @@
+# Build artifacts
+bin/
+obj/
+*.user
+*.suo
+*.cache
+
+# Runtime data
+var/
+
+# Environment
+.env
+.env.*
+*.local.json
+!.claude/settings.local.json
+

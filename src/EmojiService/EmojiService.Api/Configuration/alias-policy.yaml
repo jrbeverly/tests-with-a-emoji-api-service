@@ -1,0 +1,24 @@
+# Alias reservation and protection policy
+# Per ADR-0002: alias model, reservations, and lifecycle
+#
+# reserved      — Name is set aside; standard endpoints reject assignment.
+#                  An authorized override can claim it.
+# blocked       — Name is forbidden through any path. No override exists.
+#
+# Changes to this file go through the normal PR → deploy cycle.
+
+reserved:
+  - name: shipit
+    reason: Reserved for the official ship-it emoji
+  - name: approved
+    reason: Reserved for the official approval stamp emoji
+
+reserved_prefixes:
+  - prefix: acme-
+    reason: Reserved for Acme Corp namespace
+
+blocked:
+  - name: admin
+    reason: Impersonation risk — blocked permanently
+  - name: root
+    reason: System-reserved — blocked permanently
